@@ -1,0 +1,1 @@
+The first function I wrote was 0(n^2) because it had for looks and the function contains which is O(n^2). It also matched up with the graph as it curves straight up. Therefore, I believe I can do better
