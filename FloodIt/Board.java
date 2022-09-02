@@ -106,7 +106,9 @@ public class Board {
         if (k == 0)
             Flood.flood(color, flooded, tiles, size);
         else if (k == 1)
-            Flood.flood2(color, flooded, tiles, size);///was Flood.flood1
+            Flood.flood2(color, flooded, tiles, size);
+        else if(k==2)
+            Flood.flood1(color, flooded, tiles, size);
         else {
             System.out.println("We don't handle k > 1.");
             System.exit(-1);
