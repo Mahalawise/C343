@@ -1,29 +1,14 @@
-# Huffman Coding
+Name: Mahala Wise  
+Username: mamawise@iu.edu  
+Lab Section: 8104  
 
-For this project, you will implement Huffman's greedy algorithm for
-text compression and then write a brief report containing the results
-of running your code on the books Alice In Wonderland, Moby Dick (provided in
-the zip file), and a book of your choice. (See the comments in `Driver.java`)
 
-This assignment makes use of heaps and priority queues, which you have
-already learned about. The new data structure that you will learn
-about is Huffman trees.
+## Table of Statistics
+    
+```
+|         Book        |     Bits     |       Savings      | Percentage |
+| Alice in Wonderland |  752855 bits |  556545 saved bits |   73.92%   |
+|       Moby Dick     |  54691 bits  |  44125 saved bits  |   80.68%   |
+|  The Secret Garden  | 2035591 bits | 1548513 saved bits |   76.07%   |
+```
 
-The starter code for this assignment is in `HuffmanCoding.zip`.
-
-Specific instructions can be found in the program comments.
-Complete the TODO's in `HuffmanTree.java` file and `Driver.java`.
-The file `StudentTest.java` provides you with a detailed unit test
-that you should use to guide your development.
-
-## Submission
-
-Submit your `StudentTest.java` file to the autograder, project
-`HuffmanCodingTest`. It should contain a class `StudentTest`
-with a `test` method:
-
-    @Test
-    public void test() { ... }
-
-Submit your `HuffmanTree.java`, `Driver.java`, and `README.md` (for
-the report) files to the autograder, project `HuffmanCoding`.

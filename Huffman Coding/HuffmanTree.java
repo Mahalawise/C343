@@ -57,27 +57,26 @@ public class HuffmanTree {
         //creating a forest of nodes comparator
         Heap<Node> forest = new Heap<Node>(new Compares());
         //get the characters of the frequency table
-        if (!charFreqs.isEmpty()) {
-            for (Map.Entry<Character,Integer> chars : charFreqs.entrySet()) {
-                forest.push(new Node(chars.getValue(),chars.getKey()));
-            }
+        for (Map.Entry<Character,Integer> chars : charFreqs.entrySet()) {
+            forest.push(new Node(chars.getValue(),chars.getKey()));
+        }
             ///creating the huffman tree
             Node combines = null;
             //root node
-            if(forest.size()==1){
+            if(forest.size() == 1){
                 Node n = forest.pop();
                 this.root = new Node(n.priority,n.key);
+                return;
             }
             while(forest.size() != 1){
                 Node a = forest.pop();
                 Node b = forest.pop();
-                combines = new Node(a.priority+b.priority, a,b);
+                combines = new Node(a.priority + b.priority, a,b);
                 forest.push(combines);
             }
             this.root=combines;
             System.out.println(forest.toString());
         }
-    }
 
     /**
      * TODO
@@ -96,7 +95,6 @@ public class HuffmanTree {
             if(curr==null){
                 throw new DecodeException(bits);
             }
-
             if (curr.isLeaf() && curr != this.root){
                 return curr.key;
             }
@@ -105,12 +103,12 @@ public class HuffmanTree {
                 curr = curr.left;
             }
             //right path
-            if(c == 1){
+            if(c == '1'){
                 curr=curr.right;
             }
         }
 
-        if(curr.isLeaf()&& curr != this.root){
+        if(curr.isLeaf() && curr != this.root){
             return curr.key;
         }
         throw new DecodeException(bits);
@@ -147,10 +145,10 @@ public class HuffmanTree {
         } else {
             String left = recursion(n.left, c, s + "0");
             String right = recursion(n.right, c, s + "1");
-            if (!Objects.equals(right, "")){
+            if (!Objects.equals(left, "")){
                 return left;
             }
-            if(!Objects.equals(left,"")){
+            if(!Objects.equals(right,"")){
                 return right;
             }
         }
