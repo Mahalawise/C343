@@ -3,7 +3,7 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/Huffman Coding" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DNA Alignment" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/MergeSort" />
       <excludeFolder url="file://$MODULE_DIR$/NextPrevBinaryTree" />
       <excludeFolder url="file://$MODULE_DIR$/HashTable" />
@@ -14,6 +14,7 @@
       <excludeFolder url="file://$MODULE_DIR$/QuickSort" />
       <excludeFolder url="file://$MODULE_DIR$/Connected Components" />
       <excludeFolder url="file://$MODULE_DIR$/Routing Wires on a Chip" />
+      <excludeFolder url="file://$MODULE_DIR$/Huffman Coding" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
